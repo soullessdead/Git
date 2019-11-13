@@ -30,9 +30,13 @@ git checkout master regresamos al estatus actual de nuestro proyecto
 
 como hacer reset para borrar commit
 
-git reset --soft  e832f2f4ba28a7e8ca1b8337295eccd383a6b2c2 del commit viaja en el tiempo sin borrar las modificaciones solo borra los commits
+git reset --soft  commit "e832f2f4ba28a7e8ca1b8337295eccd383a6b2c2" 
+ del commit viaja en el tiempo sin borrar las modificaciones solo borra los commits
 git reset -- hard e832f2f4ba28a7e8ca1b8337295eccd383a6b2c2 del commit viaja en el tiempo pero borrando las modificaciones realizadas incluyendo los commit
 
+"""
+
+"""
 ramas en git
 
 ver ramas git branch
@@ -47,3 +51,14 @@ git merge rama_que_se_unira
 eliminar ramas
 
 git branch rama -D 
+"""
+
+clonar repositorios de github
+
+git clone enlace del repositorio de github
+
+conectarse a repositorio de github 
+
+git remote add origin https://github.com/soullessdead/Git
+
+para verificar que estamos conectados git remote -v
