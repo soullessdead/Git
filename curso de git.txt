@@ -1,0 +1,49 @@
+"""
+Git
+git init inicializamos git
+git status comprobamos el estado de los archivos
+git add nombre_del_archivo_a_agregar agregamos un archivo a git
+git add -A agregamos todos los archivos de la carpeta
+git rm --cached nombre_del_archivo_a_eliminar
+"""
+
+"""
+commits
+git commit -m "informacion sobre lo editado"
+git log lista de commits realizados
+git status
+git add
+git log
+Nota importante
+Al realizar modificaciones al proyecto debemos usar git status para ver los archivos modificados
+git add para agregarlos nuevamente a git
+git status para ver que todo este bien
+y git commit -m "para agregar el comentario"
+
+"""
+
+"""
+viajes en el tiempo
+
+git checkout e832f2f4ba28a7e8ca1b8337295eccd383a6b2c2 regresamos al commit que seleccionamos asi se quitan las modificaciones
+git checkout master regresamos al estatus actual de nuestro proyecto
+
+como hacer reset para borrar commit
+
+git reset --soft  e832f2f4ba28a7e8ca1b8337295eccd383a6b2c2 del commit viaja en el tiempo sin borrar las modificaciones solo borra los commits
+git reset -- hard e832f2f4ba28a7e8ca1b8337295eccd383a6b2c2 del commit viaja en el tiempo pero borrando las modificaciones realizadas incluyendo los commit
+
+ramas en git
+
+ver ramas git branch
+crear ramas git branch nombre_de_la_rama
+cambiar de rama git checkout nombre_de_la_rama
+
+unir ramas
+
+git checkout master
+git merge rama_que_se_unira
+
+eliminar ramas
+
+git branch rama -D 
